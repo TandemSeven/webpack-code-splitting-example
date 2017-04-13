@@ -1,0 +1,24 @@
+{
+  "name": "webpack-splitting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "precompile": "npm run clean",
+    "clean": "rimraf *bundle*",
+    "compile": "webpack --display-chunks --display-modules --display-origins --display-entrypoints",
+    "start": "npm run compiile",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-dynamic-import-webpack": "^1.0.1",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "rimraf": "^2.6.1",
+    "webpack": "^2.3.3"
+  }
+}
